@@ -1,7 +1,9 @@
 package account_opening.Service.repository;
 
-import account_opening.Service.model.AccountDetails;
+import account_opening.Service.model.Account_Details;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface AccountJpaRepository extends JpaRepository<AccountDetails,Long> {
+@Repository
+public interface AccountJpaRepository extends JpaRepository<Account_Details,Long> {
 }
